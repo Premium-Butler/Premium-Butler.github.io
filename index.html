@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Butler</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html"><img class="logo" src="assets/lion.png" alt="logo"></a>
+        <p> La perfection passe par l'organisation</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a onClick="scrollToSection('offers')" >Nos offres</a></li>
+                <li><a onClick="scrollToSection('team')">Notre équipe</a></li>
+                <li><a onClick="scrollToSection('contact')">Nous contacter</a></li>
+                <li><a href="./account">Mon compte</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="AboutUs">
+        <div class="name"> Premium Butler </div>
+        <div class="text">  Nous intervenons dans votre cadre professionnel pour faciliter votre vie au quotidien. Facilitateur de vie et d’envie, la perfection passe par l'organisation. </div>
+    </div>
+    <div class="space"> </div>
+    <div class="offers" id="offers">
+        <div class="text">Nos offres</div>
+        <div class="offers-info"><p> Selectionner une offre pour découvrir nos services </p></div>
+        <div class="card-grid" id="offers-grid">
+            <div class="card" id="premium">
+                <div class="card-header silver">Premium</div>
+                <div class="card-body">
+                    <p class="offers-description"> Pour vous qui êtes occupé, l’offre premium comprend 2 services au choix.</p>
+                </div>
+                <div class="card-footer"> <a class="btn"  onclick="select('premium')"> Selectionner </a>
+                </div>
+            </div>
+            <div class="card" id="premium-butler">
+                <div class="card-header gold">Premium Butler</div>
+                <div class="card-body">
+                    <p class="offers-description">
+                        L’intégralité de nos services en un seul pack. Offre complète.
+                    </p>
+                </div>
+                <div class="card-footer"> <a class="btn"  onclick="select('premium-butler')"> Selectionner </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="services" id="services">
+            <div class="text">Nos services</div>
+            <div class="services-info"><p> Tous nos services sont disponibles de 9h à 18h du lundi au vendredi et le samedi de 9h à 12h et de 14h à 18h</p></div>
+            <div class="card-grid">
+                <div class="card" id="courses">
+                    <div class="card-header">Courses</div>
+                    <div class="card-body">
+                        <p>Effectuez vos courses chez vos enseignes préférées.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn" onclick="selectService('courses')">Choisir</a></div>
+                </div>
+                <div class="card" id="pressing">
+                    <div class="card-header">Pressing</div>
+                    <div class="card-body"> 
+                        <p>Vos vêtements propres, en toutes circonstances.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn" onclick="selectService('pressing')">Choisir</a></div>
+                </div>
+                <div class="card" id="event">
+                    <div class="card-header">Évenementiel</div>
+                    <div class="card-body">
+                        <p>Salons, séminaires, réceptions d’entreprises... La perfection passe par l’organisation !</p>
+                    </div>
+                    <div class="card-footer"><a class="btn" onclick="selectService('event')">Choisir</a></div>
+                </div>
+                <div class="card" id="voiture">
+                    <div class="card-header">Voiture</div>
+                    <div class="card-body">
+                        <p>Nous conduisons votre véhicule chez des professionnels afin d’assurer sa maintenance.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn" onclick="selectService('voiture')">Choisir</a></div>
+                </div>
+            </div>
+            <div class="services-buttons">
+                <a class="btn btn-partners" href="./partners.html">Découvrez nos partenaires !</a>
+                <a class="btn btn-validate" href="#">Valider vos choix</a>
+            </div>
+            <div class="services-error"><p id="errMsg">Vous avez atteint le nombre maximum de service pour votre offre, veuillez déselectionner un service ou changer d'offre pour en ajouter un nouveau. </p></div>
+        </div>
+    </div>
+    <div class="space"> </div>
+    <div class="team" id="team">
+        <div class="text"> Notre équipe </div>
+        <table class="team-grid">
+            <tr>
+                <th>
+                    <img src="assets/Thomas.jpg" alt="photo de profil" id="thomas">
+                </th>
+                <th>
+                    <img src="assets/adrien.jpg" alt="photo de profil" id="adrien">
+                </th>
+                <th>
+                    <img src="assets/Lola.jpg" alt="photo de profil" id="lola">
+                </th>
+                <th>
+                    <img src="assets/Jean-Baptiste.jpg" alt="photo de profil" id="jean-baptiste">
+                </th>
+                <th>
+                    <img src="assets/Maveline.jpg" alt="photo de profil" id="maveline">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p> Thomas Vaz </p>
+                </td>
+                <td>
+                    <p> Adrien Millet </p>
+                </td>
+                <td>
+                    <p> Lola Alejo </p>
+                </td>
+                <td>
+                    <p> Jean-Baptiste Pires </p>
+                </td>
+                <td>
+                    <p> Maveline Verry </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="small"> Responsable service auto </p>
+                    <a href="mailto:thomas.vaz@premiumbutler.com"> thomas.vaz@premiumbutler.com </a>
+
+                </td>
+                <td>
+                    <p class="small"> Responsable service drive </p>
+                    <a href="mailto:adrien.millet@premiumbutler.com"> adrien.millet@premiumbutler.com </a>
+                </td>
+                <td>
+                    <p class="small"> Chargée de projet </p>
+                    <a href="mailto:lola.alejo@premiumbutler.com"> lola.alejo@premiumbutler.com </a>
+                </td>
+                <td>
+                    <p class="small"> Responsable service pressing </p>
+                    <a href="mailto:jbaptiste.pires@premiumbutler.com"> jbaptiste.pires@premiumbutler.com </a>
+                </td>
+                <td>
+                    <p class="small"> Responsable service évènementiel </p>
+                    <a href="mailto:maveline.verry@premiumbutler.com"> maveline.verry@premiumbutler.com </a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="space"></div>
+    <p class="contact-info">Votre concierge personnel prendra contact avec vous pour vous proposer un entretien durant lequel il s'attachera à en savoir plus sur votre mode de vie, vos attentes et vos besoins. Vos échanges sont ainsi plus efficaces, votre concierge ayant pris connaissance de votre profil pour traiter à la hauteur de vos exigences chacune de vos demandes</p>
+    <div class="space"></div>
+    <div class="section-contact">
+        <div class="contact-text">
+            <div class="text"> Nous contacter </div>
+            <p class="contact-info"> N'hésitez pas à contacter notre équipe pour plus d'informations.</p>
+            <p class="contact-info"> Par téléphone au <a href="tel:04 78 21 22 00">04 78 21 22 00</a> </p>
+            <p class="contact-info"> Par mail à l'adresse <a href="mailto:contact@premiumbutler.com">contact@premiumbutler.com </a> </p>
+            <p class="contact-info"> Ou bien directement par internet en remplissant le formulaire ci-dessous</p>
+        </div>
+        <div class="contact-img"> <img src="assets/Groupe.jpg" alt="photo de l'équipe"> </div>
+        <div class="contact" id="contact">
+            <div class="contact-form">
+                <div class="contact-fields">
+                    <input type="text" class="input" id="name" placeholder="Pierre Dupont">
+                    <input type="text" class="input" id="object" placeholder="objet">
+                    <input type="text" class="input" id="mail" placeholder="premium@butler.com">
+                </div>
+                <div class="contact-msg">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="button" class="contact-btn" value="Envoyer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> © Premium Butler </p>
+        <a href="./cgv">CGV</a>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var selected
+    var maxServices = 0
+    let selectedServices = []
+
+    function select(offer) {
+        var services = document.getElementById("services")
+        if (selected != null) {
+            var selectedElement = document.getElementById(selected)
+            selectedElement.style.border = "none"
+            selectedServices.forEach(element => element.style.border = "none")
+            selectedServices.length = 0;
+            document.getElementById("errMsg").style.visibility= "hidden"
+        }
+        else scroll(0,450)
+        if (selected == offer) {
+            selected = null
+            services.style.maxHeight = null
+            selectedServices.forEach(element => element.style.border = "none")
+            selectedServices.length = 0
+            return
+        }
+        var element = document.getElementById(offer)
+        element.style.border = "2px solid white"
+        selected = offer
+        switch (selected) {
+            case "premium":
+                maxServices = 2
+                break;
+            
+            case "premium-butler":
+                maxServices = 4
+                break;
+        
+            default:
+                break;
+        }
+        if (selectedServices.length > maxServices){
+            selectedServices.forEach(element => element.style.border = "none")
+            selectedServices.length = 0;
+        }
+
+        services.style.maxHeight = services.scrollHeight + "px"
+    }
+
+    function selectService(service) {
+        var element = document.getElementById(service)
+        if (selectedServices.includes(element)) {
+            element.style.border = "none"
+            for( var i = 0; i < selectedServices.length; i++){ 
+                if ( selectedServices[i] === element) { 
+                    selectedServices.splice(i, 1); 
+                }
+            }
+            document.getElementById("errMsg").style.visibility= "hidden"
+            return
+        }
+
+        if (selectedServices.length >= maxServices) {
+            document.getElementById("errMsg").style.visibility= "visible"
+            return
+        }
+        document.getElementById("errMsg").style.visibility= "hidden"
+
+        element.style.border = "2px solid white"
+        selectedServices.push(element)
+    }
+
+    function scrollToSection (section) {
+        var topOfElement = document.getElementById(section).offsetTop - 90
+        window.scroll({ top: topOfElement })
+    }
+
+
+</script>
